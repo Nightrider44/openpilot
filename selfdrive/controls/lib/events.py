@@ -233,7 +233,7 @@ EVENTS: Dict[int, Dict[str, Union[Alert, Callable[[Any, messaging.SubMaster, boo
     ET.PERMANENT: Alert(
       "Openpilot initialized",
       "Press the SET cruise button while driving to engage.",
-      AlertStatus.userPrompt, AlertSize.mid,
+      AlertStatus.normal, AlertSize.mid,
       Priority.LOWER, VisualAlert.none, AudibleAlert.none, 0., 0., 15.),
   },
 
