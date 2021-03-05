@@ -105,7 +105,7 @@ void safety_setter_thread() {
   cereal::CarParams::Reader car_params = cmsg.getRoot<cereal::CarParams>();
   cereal::CarParams::SafetyModel safety_model = car_params.getSafetyModel();
 
-  panda->set_unsafe_mode(2);  // see safety_declarations.h for allowed values
+  panda->set_unsafe_mode(1);  // see safety_declarations.h for allowed values
   //LOGW("setting unsafety mode");
   //libusb_control_transfer(dev_handle, 0x40, 0xdf, 2, 0, NULL, 0, TIMEOUT);
 
